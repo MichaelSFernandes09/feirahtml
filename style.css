@@ -1,3 +1,8 @@
+@font-face {
+  font-family:'m01';
+  src: url(fontes/grande_grunge/Grande\ Grunge.otf);
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -6,13 +11,12 @@
 header {
     position: fixed;
     width: 100%;
-    background-color: rgb(68, 68, 68);
+    background-color: #383838;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.281); 
   }
   
   .logo {
     text-align: center;
-    padding-bottom: -20px;
   }
   
   .logo img {
@@ -20,49 +24,17 @@ header {
     width: auto; 
   }
   
-
-  @media (max-width: 768px) {
-    .logo {
-      flex-basis: 100%;
-      text-align: center; 
-      
-    }
-  }
-
-  .flex-container {
-    display: flex;
-    flex-direction: row; 
-    align-items: center; 
-  }
-  
-  .content,
-  .image {
-    flex: 1;
-    box-sizing: border-box;
-  }
-  
   .image {
     text-align: center;
     margin-bottom: 20px;
-    border-radius: 30px;
-  }
-  
-  @media (max-width: 768px) {
-    .flex-container {
-      flex-direction: column;
-    }
   }
 
   h1 {
-    color: rgb(69, 69, 69);
+    font-family: 'm01', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(51, 51, 197, 0.6);
     font-size: 25px;
-    margin-bottom: 4%;
+    margin-bottom: 17px;
     margin-top: 65px;
-    padding-left: 5px;
-    padding-bottom: 1px;
-    background: linear-gradient(to right, rgba(255, 123, 0, 0.61), rgba(255, 123, 0, 0.404), white, white);
-    border-radius: 6px;
-    
   }
 
   main {
@@ -79,9 +51,8 @@ header {
     padding-bottom: 30px;
   }
 
-  mark {
-    background-color: rgb(218, 218, 218);
-    border-radius: 5px;
+  span {
+    color: rgba(83, 83, 255, 0.562);
   }
 
   .imagem {
@@ -106,44 +77,41 @@ header {
 
   footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(253, 189, 133);
-    padding-top: 30px;
+    background-color: rgba(51, 51, 197, 0.5);
+    padding-top: 15px;
     text-align: justify;
     padding-left: 5%;
     padding-right: 5%;
-    padding-bottom: 35px;
-}
-
-body {
-  background-color: rgb(253, 189, 133);
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 14px;
   text-align: justify;
-  color: black;
-  padding-top: 0px;
-  padding-bottom: 20px;
+  padding-bottom: 3px;
 }
 
 ul {
   max-width: 400px;
   list-style: circle;
-  display: flex; /* Isso permite que os itens fiquem lado a lado */
-  justify-content: space-between; /* Distribui os itens uniformemente */
-  padding: 0;
-  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
   padding-left: 5%;
   padding-right: 5%;
-  padding-bottom: 30px;
+  
 }
 
 .alun {
-  padding-top: 30px;
-  padding-left: 45px;
+  padding-top: 20px;
+  padding-left: 5%;
 }
 
 footer p {
-  font-size: 12px;
+  font-size: 8px;
   text-align: right;
+}
+
+.ultimo {
+  padding-bottom: 5px;
+  padding-top: 3px;
 }
