@@ -1,0 +1,149 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(68, 68, 68);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.281); 
+  }
+  
+  .logo {
+    text-align: center;
+    padding-bottom: -20px;
+  }
+  
+  .logo img {
+    max-height: 65px;
+    width: auto; 
+  }
+  
+
+  @media (max-width: 768px) {
+    .logo {
+      flex-basis: 100%;
+      text-align: center; 
+      
+    }
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+  }
+  
+  .content,
+  .image {
+    flex: 1;
+    box-sizing: border-box;
+  }
+  
+  .image {
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+
+  h1 {
+    color: rgb(69, 69, 69);
+    font-size: 25px;
+    margin-bottom: 4%;
+    margin-top: 65px;
+    padding-left: 5px;
+    padding-bottom: 1px;
+    background: linear-gradient(to right, rgba(255, 123, 0, 0.61), rgba(255, 123, 0, 0.404), white, white);
+    border-radius: 6px;
+    
+  }
+
+  main {
+    background-color: white;
+    padding-left: 8%;
+    padding-right: 8%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  p {
+    text-align: justify;
+    padding-bottom: 30px;
+  }
+
+  mark {
+    background-color: rgb(218, 218, 218);
+    border-radius: 5px;
+  }
+
+  .imagem {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 200%;
+  }
+
+  img {
+    border-radius: 10px;
+  }
+
+  .diferente {
+    text-align: center;
+    margin-bottom: 13%;
+    margin-top: 2%;
+    flex: 1;
+    box-sizing: border-box;
+  }
+
+  footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(253, 189, 133);
+    padding-top: 30px;
+    text-align: justify;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 35px;
+}
+
+body {
+  background-color: rgb(253, 189, 133);
+}
+
+h2 {
+  font-size: 20px;
+  text-align: justify;
+  color: black;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+
+ul {
+  max-width: 400px;
+  list-style: circle;
+  display: flex; /* Isso permite que os itens fiquem lado a lado */
+  justify-content: space-between; /* Distribui os itens uniformemente */
+  padding: 0;
+  font-size: 16px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 30px;
+}
+
+.alun {
+  padding-top: 30px;
+  padding-left: 45px;
+}
+
+footer p {
+  font-size: 12px;
+  text-align: right;
+}
